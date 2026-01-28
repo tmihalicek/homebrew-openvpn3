@@ -2,8 +2,8 @@ class Openvpn3 < Formula
   desc "C++ OpenVPN client and library"
   homepage "https://github.com/OpenVPN/openvpn3"
   url "https://github.com/OpenVPN/openvpn3/archive/refs/heads/master.tar.gz"
-  version "3.10.1"  # Use a version that makes sense
-  sha256 :no_check  # GitHub generates different hashes for branch archives
+  version "3.10.1"
+  sha256 "e6d4562ff89c9711021804a7c580aeed3735cd7a89c5d5e3c5532960d1df6621"
   license "AGPL-3.0-only"
   
   head "https://github.com/OpenVPN/openvpn3.git", branch: "master"
