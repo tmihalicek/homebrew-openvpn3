@@ -4,7 +4,7 @@ Homebrew tap for OpenVPN3 client.
 
 ## Installation
 ```bash
-brew tap yourusername/openvpn3
+brew tap tmihalicek/openvpn3
 brew install openvpn3
 ```
 
