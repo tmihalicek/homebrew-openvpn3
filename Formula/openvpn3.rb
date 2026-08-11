@@ -18,10 +18,9 @@ class Openvpn3 < Formula
   depends_on "xxhash"
 
   def install
-    openssl_root = Formula["openssl@3"].opt_prefix
-    
+    # OpenSSL is located via pkg-config (Homebrew puts keg-only openssl@3 on
+    # PKG_CONFIG_PATH), so OPENSSL_ROOT_DIR is not needed here.
     args = %W[
-      -DOPENSSL_ROOT_DIR=#{openssl_root}
       -DCMAKE_PREFIX_PATH=#{HOMEBREW_PREFIX}
     ]
 
